@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/animation.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <script defer src="/script.js"></script>
+    <script src="/iconsData.js"></script>
+    <title>weather</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="app">
+        <div class="app--container">
+          <form>
+            <span>Right now in</span>
+            <input class="input" type="text" maxlength="15" />
+            <span>it's <span id="main">?</span></span>
+            <button type="submit"></button>
+          </form>
+          <div class="current undraw">
+            <div class="current__icon"></div>
+            <div class="current__deg">
+              <h1></h1>
+              <p><span></span>/<span></span></p>
+            </div>
+            <div class="current__other">
+              <div class="other__info">
+                <div class="info__icon">
+                  <img src="/icons/cooling-symbol-3340.svg" alt="" />
+                </div>
+                <div class="info__result">
+                  <span id="wind" class="result"></span>mph
+                </div>
+              </div>
+              <div class="other__info">
+                <div class="info__icon">
+                  <img src="/icons/umbrella-4031.svg" alt="" />
+                </div>
+                <div class="info__result">
+                  <span id="rain" class="result">0</span>%
+                </div>
+              </div>
+              <div class="other__info">
+                <div class="info__icon">
+                  <img src="/icons/water-1579.svg" alt="" />
+                </div>
+                <div class="info__result">
+                  <span id="humidity" class="result"></span>%
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="next undraw">
+            <div class="next__card" data-tab="1">
+              <div class="next__card--icon"></div>
+              <p><span></span></p>
+              <p class="days"></p>
+            </div>
+            <div class="next__card" data-tab="2">
+              <div class="next__card--icon"></div>
+              <p><span></span></p>
+              <p class="days"></p>
+            </div>
+            <div class="next__card" data-tab="3">
+              <div class="next__card--icon"></div>
+              <p><span></span></p>
+              <p class="days"></p>
+            </div>
+            <div class="next__card" data-tab="4">
+              <div class="next__card--icon"></div>
+              <p><span></span></p>
+              <p class="days"></p>
+            </div>
+          </div>
+          <div class="type">
+            <span class="ce" id="fa">°F</span>|<span class="ce active" id="ce"
+              >°C</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

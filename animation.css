@@ -1,0 +1,54 @@
+.current__icon #sunny {
+  transform-origin: center;
+  animation: sun 18s infinite linear;
+}
+.current__icon #sun {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: sun 18s infinite linear;
+}
+.current__icon #blur1 {
+  animation: blur1 2s infinite linear;
+}
+.current__icon #blur2 {
+  animation: blur1 2s infinite linear;
+}
+.current__icon #blur3 {
+  animation: blur1 2s infinite linear;
+}
+@keyframes sun {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes blur1 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0.8rem);
+    opacity: 0;
+  }
+}
+
+/* /////////loading animation///////// */
+.loading__screen {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(166, 188, 219, 1) 100%
+  );
+
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
